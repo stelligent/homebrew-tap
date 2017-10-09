@@ -1,7 +1,7 @@
 # Some comments are needed for the Makefile to substitute lines, do not remove!
 class MuCli < Formula
   desc "A full-stack DevOps on AWS tool"
-  homepage "https://github.com/stelligent/mu"
+  homepage "https://getmu.io"
   if OS.mac?
     url "https://github.com/stelligent/mu/releases/download/v1.0.2/mu-darwin-amd64" # The MacOS master url
     sha256 "3aa7dde1edb1a2cca964e3d9f2f2078febdfe2baa7f0add9eefad76b2ec00a25" # The MacOS master sha256sum
