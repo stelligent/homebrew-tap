@@ -26,14 +26,14 @@ class MuCli < Formula
   def install
     if OS.mac?
       bin.install "mu-darwin-amd64"
-      mv "#{bin}/mu-darwin-amd64", "#{bin}/mu-cli"
+      mv "#{bin}/mu-darwin-amd64", "#{bin}/mu"
     elsif OS.linux?
       bin.install "mu-linux-amd64"
-      mv "#{bin}/mu-linux-amd64", "#{bin}/mu-cli"
+      mv "#{bin}/mu-linux-amd64", "#{bin}/mu"
     end
   end
 
   test do
-    system "#{bin}/mu-cli" ,"--version"
+    system "#{bin}/mu" ,"--version"
   end
 end
