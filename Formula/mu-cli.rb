@@ -18,7 +18,7 @@ class MuCli < Formula
     url "https://github.com/stelligent/mu/releases/download/v1.1.1-develop/mu-linux-amd64" # The Linux develop url
     sha256 "5a9cd8fb77ee1330cedb7adc104657698d0424d5438cdae296cb9bdb59a017ca" # The Linux develop sha256sum
     end
-    version "v1.1.1-develop" # The develop version
+    version "1.1.1-develop" # The develop version
   end
 
   bottle :unneeded
