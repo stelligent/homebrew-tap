@@ -13,10 +13,10 @@ class MuCli < Formula
   devel do
     if OS.mac?
     url "https://github.com/stelligent/mu/releases/download/v1.1.1-develop/mu-darwin-amd64" # The MacOS develop url
-    sha256 "b96f1f40cc2c956f03254e15b54b03de46abc48e55448476a23344fb9bbff7c8" # The MacOS develop sha256sum
+    sha256 "33e9167ea9368702466971837a532a6d368861592348c9eab249eece3e106168" # The MacOS develop sha256sum
     elsif OS.linux?
     url "https://github.com/stelligent/mu/releases/download/v1.1.1-develop/mu-linux-amd64" # The Linux develop url
-    sha256 "629b1a13a33760bfeace34e98145168140bb1305094439646419c4d863f11e5a" # The Linux develop sha256sum
+    sha256 "5d7f6e7b3308178b6eb54391af5072f66bdc96993d050645688cecc62869282f" # The Linux develop sha256sum
     end
     version "1.1.1-develop" # The develop version
   end
