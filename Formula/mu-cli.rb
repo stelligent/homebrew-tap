@@ -4,10 +4,10 @@ class MuCli < Formula
   homepage "https://getmu.io"
   if OS.mac?
     url "https://github.com/stelligent/mu/releases/download/v1.5.6/mu-darwin-amd64" # The MacOS master url
-    sha256 "51f592af309333071fadd093e121048730160f7104332a02b1ccda939558143d" # The MacOS master sha256sum
+    sha256 "ddf2814de073153ba343f71ccf85308f41953e811e15cc98df9d374c40745160" # The MacOS master sha256sum
   elsif OS.linux?
     url "https://github.com/stelligent/mu/releases/download/v1.5.6/mu-linux-amd64" # The Linux master url
-    sha256 "ef63c2047ada669a6f9686aca85524127020f21ba8afd69e0fbe183a11359ce8" # The Linux master sha256sum
+    sha256 "bbbdd4e841e2970035da6fb2ab7ed1c5e1a5b0fbe886508de94b18852caec9d3" # The Linux master sha256sum
   end
   version "1.5.6" # The master version
   devel do
