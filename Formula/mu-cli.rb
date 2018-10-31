@@ -3,13 +3,13 @@ class MuCli < Formula
   desc "A full-stack DevOps on AWS tool"
   homepage "https://getmu.io"
   if OS.mac?
-    url "https://github.com/stelligent/mu/releases/download/v1.5.8/mu-darwin-amd64" # The MacOS master url
-    sha256 "fbf3a0a134a01d2c237cfa9792aaf074fb001f61d12fda245892fdd68ca9b1dc" # The MacOS master sha256sum
+    url "https://github.com/stelligent/mu/releases/download/v1.5.9/mu-darwin-amd64" # The MacOS master url
+    sha256 "75817c65870b5441a1300537d234d688c5f1d42a9db4506e46aff6d82576c717" # The MacOS master sha256sum
   elsif OS.linux?
-    url "https://github.com/stelligent/mu/releases/download/v1.5.8/mu-linux-amd64" # The Linux master url
-    sha256 "0f5221d9e6eee56020b4a4c6a25f6e37e401dcf5e46a8a323e96baa8f7c0c23e" # The Linux master sha256sum
+    url "https://github.com/stelligent/mu/releases/download/v1.5.9/mu-linux-amd64" # The Linux master url
+    sha256 "f45428dba3f07fdf25ed35d2b2db094a6d14855661e561dc8bf7dd401ac15892" # The Linux master sha256sum
   end
-  version "1.5.8" # The master version
+  version "1.5.9" # The master version
   devel do
     if OS.mac?
     url "https://github.com/stelligent/mu/releases/download/v1.5.9-develop/mu-darwin-amd64" # The MacOS develop url
