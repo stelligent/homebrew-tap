@@ -2,9 +2,9 @@
 class ConfigLint < Formula
   desc ""
   homepage ""
-  url "https://github.com/stelligent/config-lint/releases/download/v0.0.32/config-lint_0.0.32_Darwin_x86_64.tar.gz"
-  version "0.0.32"
-  sha256 "7f60ee8b7eb2703816fa250d96be4015f620b493bde5e83cd0ffeb4c9ecd057e"
+  url "https://github.com/stelligent/config-lint/releases/download/v0.0.33/config-lint_0.0.33_Darwin_x86_64.tar.gz"
+  version "0.0.33"
+  sha256 "6edd6e5c808c47004b93bef73d979e7ad423f20876248623f6d5f7e3d36a1c64"
 
   def install
     bin.install "config-lint"
