@@ -10,8 +10,8 @@ class CfnNag < Formula
   depends_on "ruby" if MacOS.version <= :sierra
   
   resource "cfn-model" do
-    url "https://rubygems.org/gems/cfn-model-0.4.0-.gem"
-    sha256 ""
+    url "https://rubygems.org/gems/cfn-model-0.4.1.gem"
+    sha256 "694efdf9f57e9e2609eb25014382416c2f4c37f014182e50e990fdac098be422"
   end
 
   resource "colorize" do
