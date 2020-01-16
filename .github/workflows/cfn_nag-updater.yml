@@ -32,3 +32,4 @@ jobs:
         run: |
           git add .
           git commit -m "auto update cfn_nag versions and sha256"
+          git push
