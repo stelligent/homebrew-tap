@@ -23,13 +23,14 @@ jobs:
           git config --global user.email "build@build.com"
           git config --global user.name "build"
       - name: Update versions and sha256
-        run: bash ./.github/scripts/update_cfn_nag_formula_version.sh
+        run: |
+          bash ./.github/scripts/update_cfn_nag_formula_version.sh
+          rm -rf cfn_nag
         env:
           ORG: pshelby
-      - name: Diff
-        run: git diff
       - name: Commit
         run: |
+          git diff
           git add .
           git commit --allow-empty -m "auto-update cfn_nag versions and sha256"
           git push
