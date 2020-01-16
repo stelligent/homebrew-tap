@@ -2,9 +2,6 @@ name: cfn_nag-updater
 
 on: repository_dispatch
 
-env:
-  docker_org: stelligent
-
 jobs:
   update_cfn_nag:
     name: Update cfn_nag
@@ -20,8 +17,8 @@ jobs:
       - name: Setup cfn_nag repo
         run: |
           git -C cfn_nag fetch --depth=1 origin +refs/tags/*:refs/tags/*
-          git config --global user.email "build@build.com"
-          git config --global user.name "build"
+          git config --global user.email "homebrew-tap@stelligent.com"
+          git config --global user.name "stelligent-homebrew-tap-bot"
       - name: Update versions and sha256
         run: |
           bash ./.github/scripts/update_cfn_nag_formula_version.sh
