@@ -12,12 +12,8 @@ BASE_URL=https://github.com/$ORG
 RUBYGEMS_BASE_URL=https://rubygems.org
 
 CFN_NAG_URL=$BASE_URL/cfn_nag
-CFN_NAG_VERSION=$(git -C cfn_nag tag -l --sort=creatordate | tail -1)
+CFN_NAG_VERSION=$(git -C cfn_nag tag -l --sort=creatordate | tail -1 | cut -c2-)
 CFN_NAG_SHA256=$(curl -L -s $CFN_NAG_URL/tarball/v$CFN_NAG_VERSION | shasum -a 256 | cut -d' ' -f1)
-
-# Set global git name and email
-git config --global user.email "build@build.com"
-git config --global user.name "build"
 
 # Update metadata specific to cfn_nag
 sed -i "s#^\(  url\) .*#\1 \"$CFN_NAG_URL/tarball/v$CFN_NAG_VERSION\"#" Formula/cfn-nag.rb
