@@ -19,7 +19,7 @@ jobs:
           path: cfn_nag
           # token: ${{github.token}}
       - name: Update versions and sha256
-        run: bash ./scripts/update_cfn_nag_formula_version.sh
+        run: bash ./.github/scripts/update_cfn_nag_formula_version.sh
         env:
           ORG: pshelby
       - name: Diff
