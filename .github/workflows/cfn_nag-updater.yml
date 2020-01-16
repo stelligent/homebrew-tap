@@ -17,7 +17,11 @@ jobs:
         with:
           repository: pshelby/cfn_nag
           path: cfn_nag
-          # token: ${{github.token}}
+      - name: Setup cfn_nag repo
+        run: |
+          git -C cfn_nag fetch --depth=1 origin +refs/tags/*:refs/tags/*
+          git config --global user.email "build@build.com"
+          git config --global user.name "build"
       - name: Update versions and sha256
         run: bash ./.github/scripts/update_cfn_nag_formula_version.sh
         env:
