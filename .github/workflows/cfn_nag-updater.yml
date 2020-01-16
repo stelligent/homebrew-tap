@@ -1,0 +1,30 @@
+name: cfn_nag-updater
+
+on: repository_dispatch
+
+env:
+  docker_org: stelligent
+
+jobs:
+  update_cfn_nag:
+    name: Update cfn_nag
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Checkout cfn_nag repo
+        uses: actions/checkout@v2
+        with:
+          repository: pshelby/cfn_nag
+          path: cfn_nag
+          # token: ${{github.token}}
+      - name: Update versions and sha256
+        run: bash ./scripts/update_cfn_nag_formula_version.sh
+        env:
+          ORG: pshelby
+      - name: Diff
+        run: git diff
+      - name: Commit
+        run: |
+          git add .
+          git commit -m "auto update cfn_nag versions and sha256"
