@@ -2,16 +2,16 @@ class CfnNag < Formula
 
   desc "Auditing tool for CloudFormation templates"
   homepage "https://github.com/stelligent/cfn_nag"
-  url "https://github.com/stelligent/cfn_nag/tarball/v0.4.33"
-  version "0.4.33"
-  sha256 "8a430d2869adbfe8ba726f0aad5d595972980c858a07cc09632ec1d50618f3d8"
+  url "https://github.com/pshelby/cfn_nag/tarball/v0.4.57"
+  version "0.4.57"
+  sha256 "1d8538f96553e9b4a74c75dd3a095ef61e035db7033608e33d6566f9e2244227"
 
   
   depends_on "ruby" if MacOS.version <= :sierra
   
   resource "cfn-model" do
-    url "https://rubygems.org/gems/cfn-model-0.4.1.gem"
-    sha256 "694efdf9f57e9e2609eb25014382416c2f4c37f014182e50e990fdac098be422"
+    url "https://rubygems.org/gems/cfn-model-0.4.14.gem"
+    sha256 "aba02b8061ab672638f61167f3f88fb39a8dbcf87f9132295651357059a42a98"
   end
 
   resource "colorize" do
@@ -20,8 +20,8 @@ class CfnNag < Formula
   end
 
   resource "jmespath" do
-    url "https://rubygems.org/gems/jmespath-1.4.0.gem"
-    sha256 "ee5930ed833d3472fce31abf2f4a39852718e90b099dc2a6713234d600539cb4"
+    url "https://rubygems.org/gems/jmespath-1.3.1.gem"
+    sha256 "7efca9cabe1c34a1064eb4ef73b51c4e92a3bf4014a68265dc0aa7f2e48d881f"
   end
 
   resource "logging" do
@@ -30,8 +30,8 @@ class CfnNag < Formula
   end
 
   resource "netaddr" do
-    url "https://rubygems.org/gems/netaddr-2.0.3.gem"
-    sha256 "e8e9b4c523d8597725bcaec133c2f7e588c4fe6f6695edfac271bd549f9bcbd5"
+    url "https://rubygems.org/gems/netaddr-2.0.4.gem"
+    sha256 "57d76b012075c7189b14eb7bfe8ac110f59979abb6d0244dc6791ce621d873aa"
   end
 
   resource "trollop" do
