@@ -5,7 +5,7 @@
 # Patrick Shelby, 1/2020
 #
 # Update cfn_nag Homebrew formula with most recent gem versions and SHA256 values.
-# To be run in the stelligent/cfn_nag Github action workflow.
+# To be run in the stelligent/homebrew-tap GitHub Action workflow.
 #
 
 BASE_URL=https://github.com/$ORG
