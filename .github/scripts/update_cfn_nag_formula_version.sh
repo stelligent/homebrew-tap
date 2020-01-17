@@ -33,6 +33,6 @@ for gem in $(grep -E "resource.*do" Formula/cfn-nag.rb | sed 's/.*"\(.*\)".*/\1/
 
 	# Change version and sha256 values for gem in cfn-nag.rb
 	echo "INFO    : $gem:$GEM_VERSION ($GEM_SHA256)"
-	echo "DEBUG   : sed -i \"N;s#^\(\s*url \\\"$RUBYGEMS_BASE_URL/gems/$gem-\).*\\\n\(\s*sha256\) .*#\\\1$GEM_VERSION.gem\\\"\\\n\\\2 \\\"$GEM_SHA256\\\"#\" Formula/cfn-nag.rb"
+	# echo "DEBUG   : sed -i \"N;s#^\(\s*url \\\"$RUBYGEMS_BASE_URL/gems/$gem-\).*\\\n\(\s*sha256\) .*#\\\1$GEM_VERSION.gem\\\"\\\n\\\2 \\\"$GEM_SHA256\\\"#\" Formula/cfn-nag.rb"
 	sed -i "N;s#^\(.*url \"$RUBYGEMS_BASE_URL/gems/$gem-\).*\n\(\s*sha256\) .*#\1$GEM_VERSION.gem\"\n\2 \"$GEM_SHA256\"#" Formula/cfn-nag.rb
 done
