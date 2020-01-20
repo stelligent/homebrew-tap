@@ -12,7 +12,7 @@ jobs:
       - name: Checkout cfn_nag repo
         uses: actions/checkout@v2
         with:
-          repository: pshelby/cfn_nag
+          repository: stelligent/cfn_nag
           path: cfn_nag
       - name: Setup cfn_nag repo
         run: |
@@ -24,10 +24,10 @@ jobs:
           bash ./.github/scripts/update_cfn_nag_formula_version.sh
           rm -rf cfn_nag
         env:
-          ORG: pshelby
+          ORG: stelligent
       - name: Commit
         run: |
           git diff
           git add .
-          git commit --allow-empty -m "auto-update cfn_nag versions and sha256"
+          git commit --allow-empty -m "auto-update cfn_nag version and sha256"
           git push
