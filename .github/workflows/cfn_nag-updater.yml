@@ -29,5 +29,5 @@ jobs:
         run: |
           git diff
           git add .
-          git commit --allow-empty -m "auto-update cfn_nag versions and sha256"
+          git commit --allow-empty -m "auto-update cfn_nag version and sha256"
           git push
