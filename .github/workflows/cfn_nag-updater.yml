@@ -18,7 +18,7 @@ jobs:
         run: |
           git -C cfn_nag fetch --depth=1 origin +refs/tags/*:refs/tags/*
           git config --global user.email "homebrew-tap@stelligent.com"
-          git config --global user.name "stelligent-homebrew-tap-bot"
+          git config --global user.name "stelligent-homebrew-tap-updater"
       - name: Update versions and sha256
         run: |
           bash ./.github/scripts/update_cfn_nag_formula_version.sh
