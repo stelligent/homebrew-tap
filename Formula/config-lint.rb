@@ -2,16 +2,16 @@
 class ConfigLint < Formula
   desc ""
   homepage ""
-  version "0.0.39"
+  version "0.0.44"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/stelligent/config-lint/releases/download/v0.0.39/config-lint_0.0.39_Darwin_x86_64.tar.gz"
-    sha256 "0a9e6704c5f5713c521a37fdd231fb6124e1ad43c5837391b563336edcd1dce7"
+    url "https://github.com/stelligent/config-lint/releases/download/v0.0.44/config-lint_0.0.44_Darwin_x86_64.tar.gz"
+    sha256 "d7b9437dee64d9fc3a8a2b5c288aaf21f951dc198254af744a536376d0eb279f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/stelligent/config-lint/releases/download/v0.0.39/config-lint_0.0.39_Linux_x86_64.tar.gz"
-      sha256 "ce563a929e7f48fe8aa24dd3cf3cba163e090c1bab0c3883e0921d3593d62cb2"
+      url "https://github.com/stelligent/config-lint/releases/download/v0.0.44/config-lint_0.0.44_Linux_x86_64.tar.gz"
+      sha256 "bc91382dd0120de2e91e29f7ba37a27f271f3229a1541820b15fc725f66e4bbe"
     end
   end
 
