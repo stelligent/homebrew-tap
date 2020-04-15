@@ -2,9 +2,9 @@ class CfnNag < Formula
 
   desc "Auditing tool for CloudFormation templates"
   homepage "https://github.com/stelligent/cfn_nag"
-  url "https://github.com/stelligent/cfn_nag/tarball/v0.5.34"
-  version "0.5.34"
-  sha256 "e05ac648968422481b218283a6b1c8f0c689564045639c3e295c7df85f50b55b"
+  url "https://github.com/stelligent/cfn_nag/tarball/v0.5.35"
+  version "0.5.35"
+  sha256 "93c7a8b2e4f5b416f64635fbdbb799feb3769ee4dade9397d83f6c89cb6c596b"
 
 
   depends_on "ruby" if MacOS.version <= :sierra
