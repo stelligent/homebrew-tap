@@ -2,24 +2,24 @@
 class ConfigLint < Formula
   desc "Validate configuration files using rules specified in YAML"
   homepage "https://github.com/stelligent/config-lint"
-  version "1.3.0"
+  version "1.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/stelligent/config-lint/releases/download/v1.3.0/config-lint_Darwin_x86_64.tar.gz"
-    sha256 "ff34d15d7b7cbe8f100b09da195162f095f7c019971d202eefdcdfdb4d225f6e"
+    url "https://github.com/stelligent/config-lint/releases/download/v1.4.0/config-lint_Darwin_x86_64.tar.gz"
+    sha256 "7cdc0b63632cf28e3a35a49333e03f54a8a067ea81cfe952308cd5df4fcd6711"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/stelligent/config-lint/releases/download/v1.3.0/config-lint_Linux_x86_64.tar.gz"
-      sha256 "4a398f99c276848156bc3b49082f2704c4ba09f00bf9fa19e00c7d0bb49d5f5f"
+      url "https://github.com/stelligent/config-lint/releases/download/v1.4.0/config-lint_Linux_x86_64.tar.gz"
+      sha256 "6878535101e72b62013b03001f1f000ecc3a07920358215bed248bbd3ad23bbe"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stelligent/config-lint/releases/download/v1.3.0/config-lint_Linux_arm64.tar.gz"
-        sha256 "282a2dc5ca7379215dc992f184be4e18d52f2690dba69f1b5ab7398fa116026a"
+        url "https://github.com/stelligent/config-lint/releases/download/v1.4.0/config-lint_Linux_arm64.tar.gz"
+        sha256 "75cf2d11ab870fe761f1ea5a0506c270cd0845308cdb4fb59c557a2a42fdb61b"
       else
-        url "https://github.com/stelligent/config-lint/releases/download/v1.3.0/config-lint_Linux_arm.tar.gz"
-        sha256 "13dbc5436ad52939404602d03a4342dbc6664359bf74a5172d3ac25e36c8da5e"
+        url "https://github.com/stelligent/config-lint/releases/download/v1.4.0/config-lint_Linux_arm.tar.gz"
+        sha256 "3ebaaf6fb2b186f489b09530d5965817e729142cff9e22fbb73f55f075d866cf"
       end
     end
   end
